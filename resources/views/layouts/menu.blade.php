@@ -1,7 +1,7 @@
 <div class="container d-flex">
     <div class="mr-auto p-2">
       <div class="container">
-        <a href="http://www.rehabevolution.com"><img src="{{asset('assets/images/Logo_rehab_color.svg')}}" width="150px"></a>
+        <a href="home"><img src="{{asset('assets/images/Logo_rehab_color.svg')}}" width="150px"></a>
       </div>
   </div>
     <div class="p-2 botonMenu_Overlay">
