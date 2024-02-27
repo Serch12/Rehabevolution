@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home.principal');
 });
+
+/* Rutas de Nosotros */
+Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('aviso', [App\Http\Controllers\HomeController::class, 'aviso'])->name('aviso');
+
+/* Rutas de Nosotros */
+Route::get('nosotros', [App\Http\Controllers\NosotrosController::class, 'index'])->name('nosotros');
+
+/* Rutas de Servicios */
+Route::get('servicios', [App\Http\Controllers\ServiciosController::class, 'index'])->name('servicios');
+
+/* Rutas de Convenios */
+Route::get('convenios', [App\Http\Controllers\ConveniosController::class, 'index'])->name('convenios');
+
+/* Rutas de Convenios */
+Route::get('contacto', [App\Http\Controllers\ContactoController::class, 'index'])->name('contacto');

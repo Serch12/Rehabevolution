@@ -1,0 +1,238 @@
+body {
+  margin:0;
+  padding: 0px;
+  border:0px;
+  font-family: 'Open Sans', sans-serif!important;
+}
+a {
+  text-decoration: none;
+}
+a.menu {
+	  color: white !important;
+}
+a.menu:hover {
+	  color: #00ABE1 !important;
+}
+.nav-center{
+  align-items: center;
+}
+.registroBtn{
+  color: white;
+  border-radius: 30px;
+  background-color: #50C026;
+  border: 0px;
+  padding: 7px 20px;
+  font-weight: 800;
+  font-size: 15px;
+}
+ .item_menu {
+   padding:0px 25px !important;
+   color: gray!important;
+   font-weight: 400;
+ }
+ .item_menu:hover {
+   color: #00ABE1!important;
+   font-weight: 900;
+   border-bottom: 2px solid #00ABE1;
+ }
+ .item_menu_dark {
+   padding:0px 25px !important;
+   font-weight: 900;
+   color: #3D4451!important;
+ }
+ .item_menu_dark:hover {
+   color: #00ABE1!important;
+   font-weight: 900;
+   border-bottom: 2px solid #00ABE1;
+ }
+ .navbar{
+   padding: 25px!important;
+ }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,171,225);
+  background-color: rgba(0,171,225, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.textWhite{
+  color: white;
+  font-size: 15px;
+}
+.subtitle{
+  color: #00ABE1;
+  font-size: 25px;
+  font-weight: 800;
+}
+.scaleImages{
+  height: 400px !important;
+  width: auto !important!;
+  padding: 25px;
+}
+.header {
+  background: rgb(0,135,170);
+  background: linear-gradient(90deg, rgba(0,135,170,1) 0%, rgba(0,214,222,1) 100%);
+  padding: 50px;
+}
+.titleHeader {
+  font-size: 3em;
+  color: white;
+  line-height: 60px;
+}
+.buttonVisita{
+  color: white;
+  border-radius: 30px;
+  background-color: #DAE343;
+  border: 0px;
+  padding: 13px 22px;
+  font-weight: 800;
+  font-size: 15px;
+  -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0,0.3);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+}
+.boxes{
+  -moz-box-shadow: 2px 2px 20px rgba(0, 0, 0,0.1);
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+  border-radius: 3px;
+  padding: 30px;
+  align-items: center;
+  margin: 20px 0px;
+  background-color: white;
+}
+.box{
+  display: flex;
+  -ms-flex-direction:column;
+  word-wrap: break-word;
+}
+.boxBody{
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+p.black{
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+}
+.headerR {
+  background: rgb(218,227,67);
+background: linear-gradient(90deg, rgba(218,227,67,1) 0%, rgba(0,171,225,1) 100%);
+  padding: 50px;
+}
+p.textmini{
+  font-size: 0.8rem;
+}
+.agendaCita{
+    background: rgb(36,233,205);
+    background: linear-gradient(90deg, rgba(36,233,205,1) 0%, rgba(0,171,225,1) 100%);
+}
+iframe {
+  height:calc(50vh - 4px);
+  width:calc(100vw - 4px);
+  box-sizing: border-box;
+}
+.footerTxt{
+  color: white;
+  font-weight: 800;
+  padding: 10px;
+  font-size: 17px;
+}
+.verdeFooter{
+  color: white;
+}
+p.verde{
+  color: #50C026;
+  font-size: 16px;
+}
+.imagesFooter{
+  height: 100px !important;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+  .Encabezado {
+    font-size: 60px;
+    font-weight: 800;
+    color: blue;
+    text-shadow: 3px 2px 5px black;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .botonMenu_Overlay{
+    display: none;
+  }
+  .Encabezado {
+    font-size: 38px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .tagline{
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 5px black;
+    font-size: 13px;
+    line-height: 1;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .hidden{
+    display: none;
+  }
+  .titleHeader {
+    font-size: 2.4em;
+    color: white;
+    line-height: 43px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .botonMenu_lineal {
+    display: none;
+  }
+}
