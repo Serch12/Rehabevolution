@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
           <div class="col-lg-4 col-sm-12" align="center">
-            <img src="./assets/images/Logo_rehab_blanco.svg" style="height:100px;" alt="">
+            <img src="{{asset('assets/images/Logo_rehab_blanco.svg')}}" style="height:100px;" alt="">
           </div>
           <div class="col-lg-5 col-sm-12">
             <p style="color:white;">Oaxaca #6, Col. Héroes de Padierna, Delegación Magadalena Contreras, CDMX
@@ -13,13 +13,13 @@
           <div class="col-lg-3 col-sm-12">
             <div align="center">
               <p style="color:white;font-weight:400;font-size:18px; font-style: italic">¡SÍGUENOS!</p>
-                  <span style="padding:10px;"> <a href="https://www.facebook.com/RehabEvolutionFisioterapia"> <img src="assets/logos_redes/facebook.png" alt="" style="width:25px;"></a></span>
+                  <span style="padding:10px;"> <a href="https://www.facebook.com/RehabEvolutionFisioterapia"> <img src="{{asset('assets/logos_redes/facebook.png')}}" alt="" style="width:25px;"></a></span>
                   <span style="padding:10px;">
-                    <a href="https://www.instagram.com/rehabevolution/">  <img src="assets/logos_redes/insta.png" alt="" style="width:25px;"></a></span>
+                    <a href="https://www.instagram.com/rehabevolution/">  <img src="{{asset('assets/logos_redes/insta.png')}}" alt="" style="width:25px;"></a></span>
                     <span style="padding:10px;">
-                      <a href="https://twitter.com/RehabEvolution">  <img src="assets/logos_redes/twitter.png" alt="" style="width:25px;"></a></span>
+                      <a href="https://twitter.com/RehabEvolution">  <img src="{{asset('assets/logos_redes/twitter.png')}}" alt="" style="width:25px;"></a></span>
                       <span style="padding:10px;">
-                      <a href="https://twitter.com/RehabEvolution">  <img src="assets/logos_redes/tiktok.png" alt="" style="width:25px;"></a></span>
+                      <a href="https://twitter.com/RehabEvolution">  <img src="{{asset('assets/logos_redes/tiktok.png')}}" alt="" style="width:25px;"></a></span>
             </div>
           </div>
         </div>
