@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('Home.principal');
 });
 
+//requiere de rutas de Encuesta
+require(__DIR__ . '/Encuesta/routes_encuesta.php');
+
 /* Rutas de Nosotros */
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('aviso', [App\Http\Controllers\HomeController::class, 'aviso'])->name('aviso');
