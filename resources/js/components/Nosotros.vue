@@ -68,7 +68,7 @@
                         <li><strong>Servicio especializado</strong> en medicina deportiva.</li>
                         <li>La <strong>rehabilitación física</strong> es mucho <strong>más eficaz</strong> en cuanto al tiempo de recuperación que la medicina tradicional.</li>
                         <li><strong>Aparatos de alta tecnología</strong> y únicos en su tipo en el Área Metropolitana.</li>
-                        <li><strong>Único Centro avalado</strong> por la <strong>Asociación Mexicana de Futbolistasa.</strong></li>
+                        <li><strong>Único Centro avalado</strong> por la <strong>Asociación Mexicana de Futbolistas.</strong></li>
                         <li><strong>Precios competitivos,</strong> especialmente comparados con hospitales y clínicas cercanas a <strong>Rehab Evolution.</strong></li>
                     </ul>
                     <div>
