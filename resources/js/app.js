@@ -28,6 +28,8 @@ Vue.component('convenios-component', require('./components/Convenios.vue').defau
 Vue.component('contacto-component', require('./components/Contacto.vue').default);
 Vue.component('avisoprivacidad-component', require('./components/AvisoPrivacidad.vue').default);
 Vue.component('encuesta-component', require('./components/EncuestaComponent.vue').default); 
+Vue.component('acceso-component', require('./components/Acceso.vue').default); 
+Vue.component('perfil-component', require('./components/Perfil.vue').default); 
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
