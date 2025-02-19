@@ -5,7 +5,7 @@
           <div class="col-12">
             <div class="card mb-6">
               <div class="user-profile-header-banner">
-                <img src="https://www.amfpro.mx/estilos_perfil/style/assets/img/pages/banner_amfpro.png" alt="Banner image" class="rounded-top" />
+                <img src="https://www.rehabevolution.com/estilos_perfil/style/logos/banner_rehab.png" alt="Banner image" class="rounded-top" />
               </div>
               <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-5">
                 <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
@@ -113,7 +113,7 @@ export default {
         const telefono = encodeURIComponent(this.Informacion.telefono);
         const email = encodeURIComponent(this.Informacion.email);
 
-        window.location.href = `${window.location.origin}/public/perfil/contacto?nombre=${nombre}&telefono=${telefono}&email=${email}`;
+        window.location.href = `${window.location.origin}/public/datos/contacto?nombre=${nombre}&telefono=${telefono}&email=${email}`;
       },
     }
 };
