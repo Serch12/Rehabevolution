@@ -23,7 +23,8 @@ class AccesoController extends Controller
      * FUNCION QUE MOSTRARA LOS REGISTROS 
      **/
     public function Muestra(){
-        $consulta = Usuario::select('*')->get();
+        $consulta = Usuario::select('*')
+        ->where('estatus_user','=',1)->get();
         return $consulta;
     }
 
@@ -57,5 +58,28 @@ class AccesoController extends Controller
         ->first();
         
         return view('Perfil.principal')->with(['correo' => $correo,'consulta'=>$consulta]);
+    }
+
+    /**
+     * Funcion que descargara la informacion del contacto
+     **/
+    public function enviaContacto(Request $request){
+        $nombre = $request->query('nombre', 'Desconocido');
+        $telefono = $request->query('telefono', 'Sin teléfono');
+        $email = $request->query('email', 'Sin email');
+
+        $vCard = "BEGIN:VCARD\n";
+        $vCard .= "VERSION:3.0\n";
+        $vCard .= "FN:$nombre\n";
+        $vCard .= "TEL:$telefono\n";
+        $vCard .= "EMAIL:$email\n";
+        $vCard .= "END:VCARD\n";
+
+        $filename = 'contacto.vcf';
+
+        return response($vCard, 200, [
+            'Content-Type' => 'text/vcard',
+            'Content-Disposition' => "attachment; filename={$filename}"
+        ]);
     }
 }

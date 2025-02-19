@@ -20,7 +20,7 @@
                       <h4 class="mb-2">{{this.Informacion.name}}</h4>
                      
                     </div>
-                    <a type="button" class="btn btn-primary text-white" @click="guardaContacto()">
+                    <a type="button" class="btn btn-info text-white" @click="guardaContacto()">
                       <i class="ri-user-follow-line ri-16px me-2"></i>Guardar Contacto
                     </a>
                   </div>
@@ -40,28 +40,21 @@
                 <ul class="list-unstyled my-3 py-1">
                   <li class="d-flex align-items-center mb-4">
                     <i class="ri-user-3-line ri-24px"></i><span class="fw-medium mx-2">Nombre:</span>
-                    <span>{{ this.Informacion.nombre_completo }}</span>
+                    <span>{{ this.Informacion.nombre }}</span>
                   </li>
                   <li class="d-flex align-items-center mb-4">
                     <i class="ri-check-line ri-24px"></i><span class="fw-medium mx-2">Estatus:</span>
-                    <span style="color: green;">Activo</span>
+                    <span style="color: blue;">Activo</span>
                   </li>
                   <li class="d-flex align-items-center mb-4">
                     <i class="ri-map-pin-2-fill ri-24px"></i><span class="fw-medium mx-2">Dirección:</span>
-                    <span>Av. Industria Automotriz n.33 int. 203 Col. Parque Industrial Lerma, Lerma, Estado de México. CP. 52004</span>
+                    <span>Oaxaca #6, Col. Héroes de Padierna, Delegación Magadalena Contreras, CDMX </span>
                   </li>
                   <li class="d-flex align-items-center mb-2">
-                    <i class="ri-football-fill ri-24px"></i><span class="fw-medium mx-2">Puesto:</span>
-                    <span v-if="this.Informacion.name == 'Sergio de Jesus Flores'&& this.Informacion.rol_name == 'TI'">Administrador de Sistemas</span>
+                    <i class="ri-user-2-fill ri-24px"></i><span class="fw-medium mx-2">Puesto:</span>
+                    <span v-if="this.Informacion.name == 'Patricia Iglesias'&& this.Informacion.rol_name == 'Administrador'">Coordinadora</span>
                     <span v-if="this.Informacion.name == 'Arturo Marín'&& this.Informacion.rol_name == 'TI'">Programador JR.</span>
-                    <span v-if="this.Informacion.name == 'Emmanuel Damian'&& this.Informacion.rol_name == 'TI'">Programador SR.</span>
-                    <span v-if="this.Informacion.name == 'Angelica Cabrera'&& this.Informacion.rol_name == 'Contabilidad'">Coordinadora Administrativa</span>
-                    <span v-if="this.Informacion.name == 'Daniel Cisneros'&& this.Informacion.rol_name == 'Jurídico'">Coordinador Juridico</span>
-                    <span v-if="this.Informacion.name == 'juridico 1'&& this.Informacion.rol_name == 'Jurídico'">Abogado de Litigios</span>
-                    <span v-if="this.Informacion.name == 'Ana Karla Vara Martínez '&& this.Informacion.rol_name == 'Diseño'">Diseño Gráfico</span>
-                    <span v-if="this.Informacion.name == 'Álvaro Ortiz Arellano'&& this.Informacion.rol_name == 'Presidencia'">Presidente Ejecutivo</span>
-                    <span v-if="this.Informacion.name == 'Edson Zwaricz'&& this.Informacion.rol_name == 'Secretaria General'">Secretaria General</span>
-                    <span v-if="this.Informacion.name == 'Angelica Torres'&& this.Informacion.rol_name == 'Asistente Ejecutivo'">Asistente Ejecutivo</span>
+                    
                     
                   </li>
                 </ul>
@@ -69,32 +62,15 @@
                 <ul class="list-unstyled my-3 py-1">
                   <li class="d-flex align-items-center mb-4">
                     <i class="ri-phone-line ri-24px"></i><span class="fw-medium mx-2">Contacto:</span>
-                    <span>{{this.Informacion.telefono_empresa}}</span>
+                    <span>{{this.Informacion.telefono}}</span>
                   </li>
-                  <!-- <li class="d-flex align-items-center mb-4">
-                    <i class="ri-wechat-line ri-24px"></i><span class="fw-medium mx-2">Skype:</span>
-                    <span>john.doe</span>
-                  </li> -->
+
                   <li class="d-flex align-items-center mb-2">
                     <i class="ri-mail-open-line ri-24px"></i><span class="fw-medium mx-2">Correo:</span>
                     <span>{{this.Informacion.email}}</span>
                   </li>
                 </ul>
-                <!-- <small class="card-text text-uppercase text-muted small">Teams</small>
-                <ul class="list-unstyled mb-0 mt-3 pt-1">
-                  <li class="d-flex align-items-center mb-4">
-                    <i class="ri-github-line ri-24px text-body me-2"></i>
-                    <div class="d-flex flex-wrap">
-                      <span class="fw-medium me-2">Backend Developer</span><span>(126 Members)</span>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="ri-reactjs-line ri-24px text-body me-2"></i>
-                    <div class="d-flex flex-wrap">
-                      <span class="fw-medium me-2">React Developer</span><span>(98 Members)</span>
-                    </div>
-                  </li>
-                </ul> -->
+
               </div>
             </div>
             <!--/ About User -->
@@ -129,15 +105,15 @@ export default {
     },
     mounted() {
         this.Informacion = JSON.parse(this.consulta);
-        this.Informacion.nombre_completo = this.Informacion.nombre + ' ' + this.Informacion.apPaterno + ' ' + this.Informacion.apMaterno;
+        
     },
     methods: {
-        guardaContacto(){
-            const nombre = encodeURIComponent(this.Informacion.name);
-            const telefono = encodeURIComponent(this.Informacion.telefono_empresa);
-            const email = encodeURIComponent(this.Informacion.email);
+      guardaContacto(){
+        const nombre = encodeURIComponent(this.Informacion.name);
+        const telefono = encodeURIComponent(this.Informacion.telefono);
+        const email = encodeURIComponent(this.Informacion.email);
 
-        window.location.href = `${window.location.origin}/public/dowland/contacto?nombre=${nombre}&telefono=${telefono}&email=${email}`;
+        window.location.href = `${window.location.origin}/public/perfil/contacto?nombre=${nombre}&telefono=${telefono}&email=${email}`;
       },
     }
 };

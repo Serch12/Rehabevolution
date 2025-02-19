@@ -7,3 +7,4 @@ Route::get('/acceso/Muestra', [AccesoController::class, 'Muestra'])->name('acces
 Route::post('/acceso/Genera', [AccesoController::class, 'Genera'])->name('acceso/Genera')->middleware('guest');
 
 Route::get('/perfil/{token}', [AccesoController::class, 'indexPerfil'])->name('perfil/{token}');
+Route::post('/perfil/contacto', [AccesoController::class, 'enviaContacto'])->name('perfil/contacto')->middleware('guest');
