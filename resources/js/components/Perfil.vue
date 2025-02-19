@@ -9,7 +9,7 @@
               </div>
               <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-5">
                 <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
-                  <img :src="`https://test-intranet.amfpro.mx/ArchivosSistema/Perfil/${this.Informacion.foto_perfil}`"
+                  <img :src="`https://intranet-clinica.rehabevolution.com/ArchivosSistema/Documentacion/${this.Informacion.foto}`"
                     alt="user image"
                     class="d-block h-auto ms-0 ms-sm-5 rounded-4 user-profile-img" />
                 </div>
