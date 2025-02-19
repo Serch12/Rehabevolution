@@ -51,7 +51,7 @@ class AccesoController extends Controller
         $consulta =  DB::table('users')
         ->join('model_has_roles', 'users.id', '=', 'model_has_roles.model_id')
         ->join('roles', 'model_has_roles.role_id', '=', 'roles.id')
-        ->join('tbl_perfil','users.id','=','tbl_perfil.user_id')
+        ->join('tbl_perfil','users.id','=','tbl_perfil.id_user')
         ->select('tbl_perfil.*', 'users.id', 'users.name', 'users.email','roles.name as rol_name')
         ->where('users.email', $correo)
         ->first();
