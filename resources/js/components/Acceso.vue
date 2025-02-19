@@ -33,7 +33,7 @@
                                         </qr-code>
                                         <img
                                             class="qrcode__image"
-                                            src="https://www.rehabevolution.com/assets/images/logo-rehab.png"
+                                            src="https://www.rehabevolution.com/estilos_perfil/style/logos/icono_rehab.png"
                                             alt="Chen Fengyuan"
                                         />
                                     </figure>
