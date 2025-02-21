@@ -5,7 +5,7 @@
           <div class="col-12">
             <div class="card mb-6">
               <div class="user-profile-header-banner">
-                <img src="https://www.rehabevolution.com/estilos_perfil/style/logos/banner_rehab.png" alt="Banner image" class="rounded-top" />
+                <img src="https://www.rehabevolution.com/public/estilos_perfil/style/assets/img/pages/Banner QR_REHAB_2.png" alt="Banner image" class="rounded-top" />
               </div>
               <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-5">
                 <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
